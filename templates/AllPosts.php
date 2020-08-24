@@ -11,10 +11,14 @@
     <?php foreach ($posts as $post): ?>
         <div class="post">
             <img src="<?php echo($post['url_thumbnail']) ?>"/>
-            <a href="#" class="title"> <?php echo($post['title']) ?> </a> 
+            <a href="#" class="title"> <?php echo($post['title']) ?> </a>
+            <div class="time-tag">
+                <div class="time">Created: <?php echo($post['time']) ?></div>
+                <div class="tag">
+                    <a href="#"> <?php echo($post['tag']) ?></a>
+                </div>
+            </div>
             <p class="content"> <?php echo($post['content']) ?> </p>
-            <a href="#" class="time"> Created: <?php echo($post['time']) ?> </a>
-            <a href="#" class="tag"> Tag: <?php echo($post['tag']) ?> </a>
         </div>
     <?php endforeach; ?>
 

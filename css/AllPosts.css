@@ -8,19 +8,8 @@ img {
     clear: both;
 }
 
-p.time {
-    float: left;
-}
-
 a {
-    margin: 0px 15px 0px 0px;
     text-decoration: none;
-    color: #333;
-    transition: .3s;
-}
-
-.tag:hover {
-    color: #31a4df;
 }
 
 a.title {
@@ -30,6 +19,42 @@ a.title {
     transition: .3s;
 }
 
+.time-tag {
+    margin: 10px;
+}
+
 a.title:hover {
     opacity: .7;
 }
+
+.tag a {
+    color: #fff;
+    display: inline-block;
+    background: #007bff;
+    padding: 3px 10px;
+    position: relative;
+    margin-left: 7px;
+}
+
+.tag a:before {
+    content: '';
+    display: inline-block;
+    border: 12px solid #3330;
+    height: 0px;
+    border-right: 7px solid #007bff;
+    position: absolute;
+    left: -19px;
+    top: 0px;
+}
+
+.tag:hover {
+    color: #31a4df;
+}
+
+.time {
+    float: left;
+    margin-top: 3px;
+    margin-right: 15px;
+    font-weight: 600;
+}
+
