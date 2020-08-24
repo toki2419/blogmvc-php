@@ -1,0 +1,35 @@
+img {
+    float: left;
+    width: 300px;
+    margin-right: 25px;
+}
+
+.post {
+    clear: both;
+}
+
+p.time {
+    float: left;
+}
+
+a {
+    margin: 0px 15px 0px 0px;
+    text-decoration: none;
+    color: #333;
+    transition: .3s;
+}
+
+.tag:hover {
+    color: #31a4df;
+}
+
+a.title {
+    color: #ff1900;
+    font-size: 25px;
+    font-weight: 700;
+    transition: .3s;
+}
+
+a.title:hover {
+    opacity: .7;
+}
